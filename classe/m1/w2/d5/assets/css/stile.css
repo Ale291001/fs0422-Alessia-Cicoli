@@ -1,0 +1,158 @@
+/* IMPOSTAZIONI GENERALI */
+
+body{
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+main{
+    text-align: center;
+    padding: 3%;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+h6{
+    font-size: 2rem;
+}
+
+.fa-solid, .fa-regular, .fa-brands{
+    color: #e42424;
+    font-size: 3rem;
+}
+
+.pulsante{
+    background: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8rem;
+    border: none;
+}
+
+.pulsante:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 10px #d3d3d3;
+}
+
+.foto{
+    width: 60%;
+}
+
+/* HEADER */
+
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.menu li a{
+    display: block;
+    color: #e42424;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* MAIN */
+
+.sezione1{
+    background-image:url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 3%;
+}
+
+.sezione2 article, .sezione4 article, .sezione5 article, .sezione6 article .sezione7 article{
+    margin: 3rem;
+}
+
+.sezione3{
+    background-color: #0c0633;
+    color: white;
+    padding: 3%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(238, 238, 238);
+}
+
+footer section{
+    padding: 3rem;
+}
+
+footer > p{
+    padding: 3rem;
+    text-align: center;
+}
+
+footer input, footer button{
+    display: block;
+    width: 60%;
+    padding: 0.8rem;
+}
+
+footer button{
+    color: white;
+    background: linear-gradient(to right, #6cc1e2 0%, #392f7a 100%);
+    text-align: center;
+    border: none;
+}
+
+/* CHI SIAMO */
+
+table{
+    padding: 1rem;
+}
+
+th {
+    padding: 1rem;
+    color: white;
+    background-color: #3f556b;
+}
+
+td{
+    padding: 0.5rem;
+}
+
+.tabella *{
+    background-color: #d2dce7;
+}
+
+/* CONTATTI */
+
+.contatti input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;  
+}
+
+.input1, .input2{
+    height: 2rem;
+}
+
+.input3{
+    height: 6rem;
+}
+
+
+
+
+/* RESPONSIVE */
