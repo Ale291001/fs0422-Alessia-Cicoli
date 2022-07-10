@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Calcolatrice">
+        <title>Calcolatrice</title>  
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/stile.css">
+    </head>
+    
+    <body>
+
+        <div>
+
+                <input id="display" type="text" placeholder="0">
+
+                <table>
+
+                    <tr>
+                        <td> <button data-simbolo="7" onclick="aggiungi(this)">7</button> </td>
+                        <td> <button data-simbolo="8" onclick="aggiungi(this)">8</button> </td>
+                        <td> <button data-simbolo="9" onclick="aggiungi(this)">9</button> </td>
+                        <td> <button data-simbolo="/" onclick="aggiungi(this)">/</button> </td>
+                    </tr> 
+    
+                    <tr>
+                        <td> <button data-simbolo="4" onclick="aggiungi(this)">4</button> </td>
+                        <td> <button data-simbolo="5" onclick="aggiungi(this)">5</button> </td>
+                        <td> <button data-simbolo="6" onclick="aggiungi(this)">6</button> </td>
+                        <td> <button data-simbolo="*" onclick="aggiungi(this)">X</button> </td>
+                    </tr> 
+    
+                    <tr>
+                        <td> <button data-simbolo="1" onclick="aggiungi(this)">1</button> </td>
+                        <td> <button data-simbolo="2" onclick="aggiungi(this)">2</button> </td>
+                        <td> <button data-simbolo="3" onclick="aggiungi(this)">3</button> </td>
+                        <td> <button data-simbolo="-" onclick="aggiungi(this)">-</button> </td>
+                    </tr> 
+    
+                    <tr>
+                        <td> <button data-simbolo="0" onclick="aggiungi(this)">0</button> </td>
+                        <td> <button data-simbolo="." onclick="aggiungi(this)">,</button> </td>
+                        <td> <button onclick="reset()">C</button> </td>
+                        <td> <button data-simbolo="+" onclick="aggiungi(this)">+</button> </td>
+                    </tr>
+    
+                </table> 
+                
+                <button class="uguale" data-simbolo="=" onclick="calcolo()">=</button>
+   
+        </div>
+
+        <script>
+        
+            const display = document.getElementById("display")
+
+            /*tasti*/
+
+            function aggiungi(bottone){
+                
+                let simbolo = bottone.getAttribute ('data-simbolo')
+
+                display.value += simbolo
+
+            }
+
+            /*tasto uguale*/
+
+            function calcolo() {
+                
+                let totale = eval(display.value)
+
+                display.value=totale
+
+            }
+
+            /*tasto reset*/
+
+            function reset(){
+
+                display.value = ""
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

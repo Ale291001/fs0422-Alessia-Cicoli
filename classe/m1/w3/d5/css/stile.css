@@ -1,0 +1,49 @@
+
+
+div{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+
+    background: linear-gradient(to right, turquoise 0%, plum 100%);
+    border-radius: 30px;
+    box-shadow:0px 0px 20px 20px rgb(200, 200, 200);    
+}
+
+button {
+    width:100px;
+    height:100px;
+    margin:1px;
+    margin-top:5px;
+    margin-bottom:5px;
+
+    font-size:2rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px 10px;
+}
+
+.uguale{
+    width: 400px;
+    border-radius: 50px;
+}
+
+#display {
+    width:400px;
+    height:70px;
+    padding:3px;
+
+    font-size:2rem;
+    text-align:right;
+    border: none;
+    border-radius: 1.5rem;
+}
