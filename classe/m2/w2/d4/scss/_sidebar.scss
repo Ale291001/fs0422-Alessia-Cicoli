@@ -1,7 +1,7 @@
 @import 'variables';
 
 .sidebar {
-    position: absolute;
+    position: fixed;
 
     left:-60px;
 
@@ -9,7 +9,6 @@
 
     width: 0;
     
-    //position: fixed;
     top: 0;
     background-color: $bg-sidebar;
     text-align: center;
