@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!--navbar-->
+
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+
+                <div><img src="img/1200px-NYK_logo.svg.png" alt="Knicks" class="knicks img-fluid"></div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav w-100 justify-content-end">
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#squadra">Squadra</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#partner">Giocatori</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#footer">Contatti</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#footer">Biglietti</a>
+                        </li>
+                    </ul> 
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--squadra-->
+
+        <section id="squadra" class="mt-5 text-center text-dark">
+
+            <div class="squadra">
+                <div class="p-4 mx-4 rounded">
+                    <h2>LA NOSTRA SQUADRA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nostrum blanditiis quisquam similique praesentium repellendus, tenetur nobis laudantium ab possimus, omnis dicta, officiis qui quo adipisci tempora! Aperiam, iusto voluptate!</p>
+                </div>             
+            </div>
+
+        </section>
+
+        <!--partership-->
+
+        <section id="partner" class="container py-4 my-4 rounded">
+
+            <h2 class="text-center text-white pb-4">Partnership</h2>
+
+            <div class="row row-cols-1 row-cols-sm-3">
+
+                <div class="py-7 text-center ">
+                    <div class="fs-2 mb-3 ">    
+                        <img src="img/Netflix-Logo.png" alt="" class="logo">  
+                    </div>
+                </div>
+
+                <div class="py-7 text-center ">
+                    <div class="fs-2 mb-3 ">
+                        <img src="img/Coca-Cola-Logo.png" alt="" class="logo">
+                    </div>
+                </div>
+
+                <div class="py-7 text-center ">
+                    <div class="fs-2 mb-3 ">
+                       <img src="img/Nike-Logo.png" alt="" class="logo">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <!--carosello-->
+
+        <section id="myCarousel" class="container carousel slide py-5" data-bs-ride="carousel">
+
+            <div class="carousel-inner my-4">
+
+                <div class="carousel-item active">
+                    <div class="card d-flex mx-auto my-5 text-center w-50">
+                        <div class="card-image-top">
+                            <img class="img-fluid d-flex w-100" src="img/i.png">
+                        </div>
+                        <div class="card-text mx-2 my-5 mx-md-5 mb-3">
+                            <h4 class="card-title fw-bold">Jalen Brunson</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum soluta impedit iure qui adipisci fugit laborum quaerat, consequuntur ea cupiditate sit, inventore nemo nostrum aliquid debitis labore distinctio illum quasi.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <div class="card d-flex mx-auto my-5 text-center w-50">
+                        <div class="card-image-top">
+                            <img class="img-fluid d-flex w-100" src="img/i (1).png">
+                        </div>
+                        <div class="card-text mx-2 my-5 mx-md-5 mb-3">
+                            <h4 class="card-title fw-bold">Ryan Arcidiacono</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum soluta impedit iure qui adipisci fugit laborum quaerat, consequuntur ea cupiditate sit, inventore nemo nostrum aliquid debitis labore distinctio illum quasi.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <div class="card d-flex mx-auto my-5 text-center w-50">
+                        <div class="card-image-top">
+                            <img class="img-fluid d-flex w-100" src="img/i (2).png">
+                        </div>
+                        <div class="card-text mx-2 my-5 mx-md-5 mb-3">
+                            <h4 class="card-title fw-bold">Miles McBride</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum soluta impedit iure qui adipisci fugit laborum quaerat, consequuntur ea cupiditate sit, inventore nemo nostrum aliquid debitis labore distinctio illum quasi.</p> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </section>
+        
+    </main>
+
+    <!--footer-->
+
+    <footer id="footer" class="footer mt-auto py-4 text-white">
+        <div class="container text-center">
+
+            <div class="row py-4 justify-content-center">
+
+                <div class="col-md-2 mx-2">
+                    <h4 class="py-2">Biglietti</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo delectus nihil nisi harum, atque fugit blanditiis nulla ducimus earum eum cumque.</p>
+                </div>
+               
+                <div class="col-md-2 mx-2">
+                    <h4 class="py-2">Squadra</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo delectus nihil nisi harum, atque fugit blanditiis nulla ducimus earum eum cumque.</p>
+                </div>
+
+                <div class="col-md-2 mx-2">
+                    <h4 class="py-2">Fan</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo delectus nihil nisi harum, atque fugit blanditiis nulla ducimus earum eum cumque.</p>
+                </div>
+
+                <div class="col-md-2 mx-2">
+                    <h4 class="py-2">Negozio</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo delectus nihil nisi harum, atque fugit blanditiis nulla ducimus earum eum cumque.</p>
+                </div>
+
+                <div class="col-md-2 mx-2">
+                    <h4 class="py-2">Contatti</h4>  
+                    <div class="py-2"><i class="bi bi-facebook"></i></div>
+                    <div class="py-2"><i class="bi bi-twitter"></i></div>
+                    <div class="py-2"><i class="bi bi-instagram"></i></div>
+                    <div class="py-2"><i class="bi bi-youtube"></i></div>
+                </div>
+                
+            </div>
+
+            <span class="text-white">Diritto d'autore © 2022 NBA. Tutti i diritti riservati </span>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

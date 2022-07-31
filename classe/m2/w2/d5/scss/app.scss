@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'function';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//header
+
+.navbar{
+    background-color: orange;
+    background: linear-gradient(90deg, rgb(253, 190, 72) 0%, darkorange 100%);
+}
+
+.navbar a:hover{
+    background-color: rgb(154, 100, 0);
+}
+
+.knicks{
+    height: 3rem;
+    width: 4rem;
+}
+
+.logo{
+    height: 5rem;
+    width: 7rem;
+}
+
+//squadra
+
+.squadra{
+    background-image: url("../img/msg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.squadra div{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.squadra p{
+    font-size: 20px;
+}
+
+//carosello
+
+.card{
+    box-shadow: 0px 0px 50px 30px lightgrey;
+}
+
+//footer
+
+#partner, .footer{
+    background: linear-gradient(90deg,rgba(0,186,255,1) 0%, rgba(0,57,255,1) 100%);
+}
+
+.footer{
+    color: text($footer);
+}
+
+
+
+
+
