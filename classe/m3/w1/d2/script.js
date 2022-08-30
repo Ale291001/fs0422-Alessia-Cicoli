@@ -7,11 +7,11 @@ class SonAccount {
         return this.balanceInit += versamento;
     }
     draw(prelievo) {
-        if (this.balanceInit - prelievo < 0) {
+        if (this.balanceInit - prelievo >= 0) {
             return this.balanceInit -= prelievo;
         }
         else {
-            throw new Error(`Ciao non trovato`);
+            throw new Error(`Hai finito i soldi`);
         }
     }
     stampBalance() { console.log(this.balanceInit); }
@@ -25,7 +25,13 @@ class MotherAccount extends SonAccount {
         this.interest = interest;
     }
     draw(prelievo) {
-        return this.balanceInit = this.balanceInit - prelievo - (prelievo / 100 * this.interest);
+        prelievo = prelievo + (prelievo / 100 * this.interest);
+        if (this.balanceInit - prelievo >= 0) {
+            return this.balanceInit -= prelievo;
+        }
+        else {
+            throw new Error(`Hai finito i soldi`);
+        }
     }
 }
 let figlio = new SonAccount();
@@ -36,5 +42,7 @@ figlio.stampBalance();
 madre.addInterest = 10;
 madre.deposit(200);
 madre.draw(50);
+madre.stampBalance();
+madre.draw(140);
 madre.stampBalance();
 //# sourceMappingURL=script.js.map
