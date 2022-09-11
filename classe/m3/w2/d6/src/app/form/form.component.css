@@ -1,0 +1,19 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+
+input, button{
+    margin-top: 5em;
+    padding: 5px 15px;
+}
+
+button{
+    margin-left: 1em;
+    background-color: #222;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #333;
+}

@@ -1,0 +1,7 @@
+<app-post-card *ngFor="let post of allPost">
+
+  <p title>{{post.title}}</p>
+
+  <button active (click)="changeActive(post.id)" [innerText]="isActive ? 'Disattiva' : 'Attiva'"></button>
+
+</app-post-card>

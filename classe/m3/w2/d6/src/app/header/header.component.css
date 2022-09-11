@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #222;
+}
+
+li a {
+    display: block;
+    
+    color: white;
+    text-decoration: none;
+
+    text-align: center;
+    padding: 15px 30px;
+}
+
+li a:hover {
+    background-color: #333;
+}
